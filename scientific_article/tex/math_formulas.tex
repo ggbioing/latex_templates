@@ -1,0 +1,66 @@
+% Abbreviations
+\newcommand{\rhs}[0]{right hand side}  % right hand side
+\newcommand{\lhs}[0]{left hand side}  % left hand side
+\newcommand{\snr}[0]{snr}  % signal-to-noise ratio
+% Definitions
+\newcommand{\realnumbers}[0]{\mathbb{R}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+% boldface symbols
+\newcommand{\xb}[0]{\mathbf{x}}
+\newcommand{\setx}[0]{\mathbf{x}_1,\ldots,\mathbf{x}_C}
+\newcommand{\setxn}[0]{\mathbf{x}_1^{(n)},\ldots,\mathbf{x}_C^{(n)}}
+\newcommand{\yb}[0]{\mathbf{y}}
+\newcommand{\zb}[0]{\mathbf{z}}
+\newcommand{\dz}[0]{d\zb}
+% colored symbols
+\newcommand{\xc}[0]{\color{blue}x\color{black}}
+\newcommand{\xbc}[0]{\color{blue}\xb\color{black}}
+\newcommand{\yc}[0]{\color{olive}y\color{black}}
+\newcommand{\ybc}[0]{\color{olive}\yb\color{black}}
+% normal symbols
+\newcommand{\thetab}[0]{\boldsymbol{\theta}}
+\newcommand{\thetaset}[0]{\thetab_1,\ldots,\thetab_C}
+\newcommand{\phib}[0]{\boldsymbol{\phi}}
+\newcommand{\phiset}[0]{\phib_1,\ldots,\phib_C}
+\newcommand{\etab}[0]{\boldsymbol{\eta}}
+\newcommand{\epsilonb}[0]{\boldsymbol{\epsilon}}
+\newcommand{\x}[0]{\xb}
+\newcommand{\z}[0]{\zb}
+\newcommand{\q}[1]{q\left(#1\right)}
+\newcommand{\p}[1]{p\left(#1\right)}
+\newcommand{\Lin}[0]{\mathbf{L}}
+\newcommand{\mub}[0]{\boldsymbol{\mu}}
+\newcommand{\Sigmab}[0]{\boldsymbol{\Sigma}}
+\newcommand{\sigmab}[0]{\boldsymbol{\sigma}}
+% Gaussian
+\newcommand{\Gauss}[2]{\mathcal{N}\left(#1;#2\right)}
+\newcommand{\Gaussof}[1]{\mathcal{N}\left(#1\right)}
+\newcommand{\Gausstd}[0]{\Gauss{\mathbf{0}}{\mathbf{I}}}
+\newcommand{\GaussStdDim}[1]{\Gauss{\mathbf{0}}{\mathbf{I}_{#1}}}
+% Kullback-Leibler
+\newcommand{\KL}[2]{\mathcal{D}_{KL}\big(#1\left|\right|#2\big)}
+% Expected Value
+\newcommand{\expect}{\mathbb{E}}
+\newcommand{\E}[1]{\expect\left[#1\right]}
+\newcommand{\EE}[2]{\expect_{#1}\left[#2\right]}
+% Variational approximation
+\newcommand{\qz}[0]{\q{\z}}
+\newcommand{\qzgx}[0]{\q{\z|\x}}
+\newcommand{\qzgsetx}[0]{\q{\z|\setx}}
+\newcommand{\qzg}[1]{\q{\z|#1}}
+\newcommand{\qzx}[1]{\q{\z|\x_{#1}}}
+% Marginal / Joint probabilities
+\newcommand{\px}[0]{\p{\x}}
+\newcommand{\pz}[0]{\p{\z}}
+\newcommand{\pxz}[0]{\p{\x,\z}}
+\newcommand{\psetx}[0]{\p{\setx}}
+\newcommand{\psetxz}[0]{\p{\setx,\z}}
+% Conditional probabilities
+\newcommand{\pxgz}[0]{\p{\x|\z}} % x Given z
+\newcommand{\psetxgz}[0]{\p{\setx|\z}}
+\newcommand{\pzgsetx}[0]{\p{\z|\setx}}
+\newcommand{\pzgx}[0]{\p{\z|\x}}
+% Posterior
+\newcommand{\pzsetx}[0]{\p{\z|\setx}}
+% Lower Bound
+\newcommand{\LB}[0]{\mathcal{L}\left(\thetab, \phib, \x \right)}

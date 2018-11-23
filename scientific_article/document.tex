@@ -1,0 +1,45 @@
+\documentclass{article}
+
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage[font=small,skip=0pt]{subcaption}  % subcaption automatically loads caption package
+\usepackage{ulem}  % UnderLine for EMphasis
+\usepackage{amsmath}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage[perpage]{footmisc}  % reset footnote counter at each page
+
+\usepackage[numbers,sectionbib,sort&compress]{natbib}
+
+\title{My Awesome Title}
+
+\author{Author \#1 \and Author \#2}
+
+\input{./tex/abbreviations}
+\input{./tex/math_formulas}
+
+\begin{document}
+
+\maketitle
+\input{./tex/Abstract}
+\input{./tex/Introduction}
+\input{./tex/Method}
+\input{./tex/Experiments}
+\input{./tex/Discussion}
+\input{./tex/Conclusion}
+\input{./tex/Acknowledgements}
+
+\bibliographystyle{splncs04}
+\bibliography{tex/biblio}
+
+\newpage
+\input{./tex/Supplementary_Material}
+
+\end{document}
