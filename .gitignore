@@ -1,0 +1,7 @@
+# LATEX
+**/*.aux
+**/*.bbl
+**/*.blg
+**/*.log
+**/*.out
+**/*.pdf
