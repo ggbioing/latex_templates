@@ -6,6 +6,8 @@
 \newcommand{\realnumbers}[0]{\mathbb{R}}
 \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
 % boldface symbols
+\newcommand{\ab}[0]{\mathbf{a}}
+\newcommand{\bb}[0]{\mathbf{b}}
 \newcommand{\xb}[0]{\mathbf{x}}
 \newcommand{\setx}[0]{\mathbf{x}_1,\ldots,\mathbf{x}_C}
 \newcommand{\setxn}[0]{\mathbf{x}_1^{(n)},\ldots,\mathbf{x}_C^{(n)}}
@@ -18,6 +20,7 @@
 \newcommand{\yc}[0]{\color{olive}y\color{black}}
 \newcommand{\ybc}[0]{\color{olive}\yb\color{black}}
 % normal symbols
+\newcommand{\alphab}[0]{\boldsymbol{\alpha}}
 \newcommand{\thetab}[0]{\boldsymbol{\theta}}
 \newcommand{\thetaset}[0]{\thetab_1,\ldots,\thetab_C}
 \newcommand{\phib}[0]{\boldsymbol{\phi}}
@@ -38,9 +41,14 @@
 \newcommand{\Gausstd}[0]{\Gauss{\mathbf{0}}{\mathbf{I}}}
 \newcommand{\GaussStdDim}[1]{\Gauss{\mathbf{0}}{\mathbf{I}_{#1}}}
 % Kullback-Leibler
-\newcommand{\KL}[2]{\mathcal{D}_{KL}\big(#1\left|\right|#2\big)}
+\newcommand{\kl}[0]{\operatorname{\mathcal{D}_{KL}}}
+\newcommand{\KL}[2]{\kl\big(#1\left|\right|#2\big)}
 % Expected Value
-\newcommand{\expect}{\mathbb{E}}
+\newcommand{\expect}{\operatorname{\mathbb{E}}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\VAR}[1]{\Var\left[#1\right]}
+\newcommand{\COV}[1]{\Cov\left[#1\right]}
 \newcommand{\E}[1]{\expect\left[#1\right]}
 \newcommand{\EE}[2]{\expect_{#1}\left[#2\right]}
 % Variational approximation
