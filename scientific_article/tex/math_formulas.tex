@@ -29,8 +29,6 @@
 \newcommand{\epsilonb}[0]{\boldsymbol{\epsilon}}
 \newcommand{\x}[0]{\xb}
 \newcommand{\z}[0]{\zb}
-\newcommand{\q}[1]{q\left(#1\right)}
-\newcommand{\p}[1]{p\left(#1\right)}
 \newcommand{\Lin}[0]{\mathbf{L}}
 \newcommand{\mub}[0]{\boldsymbol{\mu}}
 \newcommand{\Sigmab}[0]{\boldsymbol{\Sigma}}
@@ -55,13 +53,9 @@
 \newcommand{\COV}[1]{\Cov\left[#1\right]}
 \newcommand{\E}[1]{\expect\left[#1\right]}
 \newcommand{\EE}[2]{\expect_{#1}\left[#2\right]}
-% Variational approximation
-\newcommand{\qz}[0]{\q{\z}}
-\newcommand{\qzgx}[0]{\q{\z|\x}}
-\newcommand{\qzgsetx}[0]{\q{\z|\setx}}
-\newcommand{\qzg}[1]{\q{\z|#1}}
-\newcommand{\qzx}[1]{\q{\z|\x_{#1}}}
 % Marginal / Joint probabilities
+\newcommand{\q}[1]{q\left(#1\right)}
+\newcommand{\p}[1]{p\left(#1\right)}
 \newcommand{\px}[0]{\p{\x}}
 \newcommand{\pz}[0]{\p{\z}}
 \newcommand{\pxz}[0]{\p{\x,\z}}
@@ -74,5 +68,15 @@
 \newcommand{\pzgx}[0]{\p{\z|\x}}
 % Posterior
 \newcommand{\pzsetx}[0]{\p{\z|\setx}}
+% Variational approximation
+\newcommand{\qz}[0]{\q{\z}}
+\newcommand{\qzgx}[0]{\q{\z|\x}}
+\newcommand{\qzgsetx}[0]{\q{\z|\setx}}
+\newcommand{\qzg}[1]{\q{\z|#1}}
+\newcommand{\qzx}[1]{\q{\z|\x_{#1}}}
 % Lower Bound
 \newcommand{\LB}[0]{\mathcal{L}\left(\thetab, \phib, \x \right)}
+% EXPECTATION PROPAGATION
+\newcommand{\qi}[0]{q_i(\thetab)}
+\newcommand{\qj}[0]{q_j(\thetab)}
+\newcommand{\cavity}[0]{Q_{\backslash i}(\thetab)}
